@@ -23,12 +23,12 @@ class Menu:
 
     def run(self, ):
 
-        pygame.mixer_music.load('./assets/fase1.mp3')
+        pygame.mixer_music.load('./assets/Menu.mp3')
         pygame.mixer_music.play(-1)  # o -1 é para a música tocar indefinidamente
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(50, "Mountain", COLOR_ORANGE, ((WINDOW_WIDTH / 2), 70))
-            self.menu_text(50, "Shooter", COLOR_ORANGE, ((WINDOW_WIDTH / 2), 120))
+            self.menu_text(50, "Mountain", C_WHITE, ((WINDOW_WIDTH / 2), 70))
+            self.menu_text(50, "Shooter", C_WHITE, ((WINDOW_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
                 self.menu_text(20, MENU_OPTION[i], C_WHITE, ((WINDOW_WIDTH / 2), 180 + 28 * i))
